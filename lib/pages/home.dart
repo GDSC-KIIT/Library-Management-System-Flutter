@@ -11,10 +11,11 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.brown.shade800,
         title: Text('Library'),
       ),
       body: Container(
-        color: Colors.green,
+        color: Colors.brown.shade600,
       )
     );
   }

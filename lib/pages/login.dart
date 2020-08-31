@@ -10,25 +10,24 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-
   final _auth=FirebaseAuth.instance;
   String email;
   String password;
-  final _emailController= TextEditingController();
-  final _passwordController= TextEditingController();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(child:
-      Padding(
-        padding: EdgeInsets.all(8.0),
-        child: ListView(
+      body: SafeArea(
+        child: Padding(
+        padding: EdgeInsets.only(left:8.0,right: 8.0),
+          child: ListView(
           children: <Widget>[
-            SizedBox(height: 80),
             Column(
               children: <Widget>[
-                Image(image: NetworkImage('https://www.netclipart.com/pp/m/79-791996_icons-and-graphics-stack-of-books-transparent.png'),
+            //    SizedBox(height: 80),
+                Image(image: NetworkImage(
+                  //  'https://www.netclipart.com/pp/m/79-791996_icons-and-graphics-stack-of-books-transparent.png'
+                'https://i.dlpng.com/static/png/4262526-cartoon-teachers-day-calendar-is-a-commercial-element-calendar-teacher-calendar-png-640_640_preview.webp'
+                ),
                 ),
                 SizedBox(height:16),
                 Text('Library Management System',
@@ -44,10 +43,12 @@ class _LoginPageState extends State<LoginPage> {
                 onChanged: (value){
                   email=value;
                 },
-                controller: _emailController,
                 decoration: InputDecoration(
+                  enabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.brown),
+                  ),
                   hintText: '\tEmail',
-                  icon: Icon(Icons.email),
+                  icon: Icon(Icons.email,color: Colors.brown),
                 ),
               ),
             ),
@@ -58,21 +59,25 @@ class _LoginPageState extends State<LoginPage> {
                 onChanged: (value){
                   password=value;
                 },
-                controller: _passwordController,
                 decoration: InputDecoration(
+                  enabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.brown),
+                  ),
                   hintText: 'Password',
-                  icon: Icon(Icons.lock),
+                  icon: Icon(Icons.lock, color: Colors.brown),
                 ),
                 obscureText: true,//replaces password with bullets as we enter it
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top:10.0),
+              padding: const EdgeInsets.only(top:5.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   RaisedButton(
-                    color: Color(0xFF8AC7C0),//for continuing
+                    padding: EdgeInsets.only(left: 50,right: 50),
+                    shape: StadiumBorder(),
+                    color: Color(0xFF8AC7C0),
                     onPressed: () async{
                       try{
                         final user= await _auth.signInWithEmailAndPassword(email: email, password: password);
@@ -82,7 +87,8 @@ class _LoginPageState extends State<LoginPage> {
                         print(e);
                       }
                     },
-                    child: Text('LOGIN'),
+                    child: Text('LOGIN',
+                    ),
                   )
                 ],
               ),
@@ -93,12 +99,14 @@ class _LoginPageState extends State<LoginPage> {
                 children: <Widget>[
                   Text('Don\'t have an account?'),
                   RaisedButton(
+                    shape: StadiumBorder(),
                     color: Color(0xFF8AC7C0),
                     onPressed: (){
                       Navigator.pushNamed(context, SignUpPage.id);
                       print('push');
                     },
-                    child: Text('SIGN UP'),
+                    child: Text('SIGN UP',
+                    ),
                   ),
                 ],
               ),

@@ -20,10 +20,13 @@ class _SignUpPageState extends State<SignUpPage> {
         padding: EdgeInsets.all(8.0),
         child: ListView(
           children: <Widget>[
-            SizedBox(height: 80),
+          //  SizedBox(height: 80),
             Column(
               children: <Widget>[
-                Image(image: NetworkImage('https://www.netclipart.com/pp/m/79-791996_icons-and-graphics-stack-of-books-transparent.png'),
+                Image(image: NetworkImage(
+                    //'https://www.netclipart.com/pp/m/79-791996_icons-and-graphics-stack-of-books-transparent.png'
+                    'https://i.dlpng.com/static/png/4262526-cartoon-teachers-day-calendar-is-a-commercial-element-calendar-teacher-calendar-png-640_640_preview.webp'
+                  ),
                 ),
                 SizedBox(height:16),
                 Text('Library Management System',
@@ -41,8 +44,11 @@ class _SignUpPageState extends State<SignUpPage> {
                 },
                 // controller: _usernameController,
                 decoration: InputDecoration(
+                  enabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.brown),
+                  ),
                   hintText: '\tEmail',
-                  icon: Icon(Icons.email),
+                  icon: Icon(Icons.email, color: Colors.brown,),
                 ),
               ),
             ),
@@ -56,8 +62,12 @@ class _SignUpPageState extends State<SignUpPage> {
                 },
                 //  controller: _passwordController,
                 decoration: InputDecoration(
+                  hoverColor: Colors.brown,
+                  enabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.brown),
+                  ),
                   hintText: 'Password',
-                  icon: Icon(Icons.lock),
+                  icon: Icon(Icons.lock, color: Colors.brown),
                 ),
                 obscureText: true,//replaces password with bullets as we enter it
               ),
@@ -68,12 +78,14 @@ class _SignUpPageState extends State<SignUpPage> {
                 children: <Widget>[
                   Text('Continue for a seamless experience!'),
                   RaisedButton(
+                    padding: EdgeInsets.only(left: 40,right: 40),
+                    shape: StadiumBorder(),
                     color: Color(0xFF8AC7C0),
                      onPressed: () async{
                       try{
                         final newuser= await _auth.createUserWithEmailAndPassword(email: email, password: password);
                         if(newuser!=null)
-                          Navigator.pushNamed(context, HomePage.id);
+                          Navigator.pushReplacementNamed(context, HomePage.id);
                       }catch(e){
                         print(e);
                       }
