@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:library_system/pages/addNewBookPage.dart';
+import 'package:library_system/pages/inventoryPage.dart';
+import 'package:library_system/pages/issueBookPage.dart';
+import 'package:library_system/pages/returnBookPage.dart';
 
 class HomePage extends StatefulWidget {
   static String id = 'homepage';
@@ -9,13 +13,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    var display12 = display1(
-      context,
-      "RETURN BOOK",
-      Colors.white38,
-      Colors.white70,
-      Color(0xFF584846),
-    );
     return Scaffold(
       body: ListView(
         children: [
@@ -50,7 +47,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     );
                   },
-                )
+                ),
               ],
             ),
           ),
@@ -69,6 +66,29 @@ class _HomePageState extends State<HomePage> {
           ),
           display1(
             context,
+            () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ReturnBookPage(),
+                ),
+              );
+            },
+            "RETURN BOOK",
+            Colors.white38,
+            Colors.white70,
+            Color(0xFF584846),
+          ),
+          display1(
+            context,
+            () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => InventoryPage(),
+                ),
+              );
+            },
             "INVENTORY",
             Colors.white38,
             Colors.white70,
@@ -76,6 +96,14 @@ class _HomePageState extends State<HomePage> {
           ),
           display1(
             context,
+            () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => AddNewBookPage(),
+                ),
+              );
+            },
             "ADD NEW BOOK",
             Colors.white38,
             Colors.white70,
@@ -83,46 +111,55 @@ class _HomePageState extends State<HomePage> {
           ),
           display1(
             context,
+            () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => IssueBookPage(),
+                ),
+              );
+            },
             "ISSUE BOOK",
             Colors.white38,
             Colors.white70,
             Color(0xFF584846),
           ),
-          display12,
         ],
       ),
     );
   }
 }
 
-display1(BuildContext context, String title, Color c1, Color c2, Color textc) {
+display1(BuildContext context, onTap, String title, Color c1, Color c2,
+    Color textc) {
   return Padding(
     padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-    child: Card(
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(15),
-      ),
-      shadowColor: Colors.black,
-      elevation: 8,
-      child: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-              colors: [c1, c2],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight),
+    child: GestureDetector(
+      onTap: onTap,
+      child: Card(
+        shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15),
         ),
-        width: MediaQuery.of(context).size.width - 40,
-        height: 105,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: Center(
+        shadowColor: Colors.black,
+        elevation: 8,
+        child: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+                colors: [c1, c2],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight),
+            borderRadius: BorderRadius.circular(15),
+          ),
+          width: MediaQuery.of(context).size.width - 40,
+          height: 105,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(20.0),
                     child: Text(
                       title,
                       style: TextStyle(
@@ -132,10 +169,10 @@ display1(BuildContext context, String title, Color c1, Color c2, Color textc) {
                       ),
                     ),
                   ),
-                ),
-              ],
-            )
-          ],
+                ],
+              )
+            ],
+          ),
         ),
       ),
     ),
