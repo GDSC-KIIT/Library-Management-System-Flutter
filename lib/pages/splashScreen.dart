@@ -46,8 +46,8 @@ class _SplashScreenState extends State<SplashScreen> {
       backgroundColor: Color(0xFFE0B485),
       body: Center(
         child: Container(
-          height: UIConstants.fitToHeight(250, context),
-          width: UIConstants.fitToWidth(250, context),
+          height: UIConstants.fitToHeight(710, context),
+          width: UIConstants.fitToWidth(375, context),
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage(UIConstants.splashScreenLogo),
