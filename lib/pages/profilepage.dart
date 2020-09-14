@@ -143,13 +143,13 @@ class _ProfilePageState extends State<ProfilePage> {
                           color: Color(0xFF584846),
                           child: Text("Edit",
                               style: TextStyle(color: Colors.white)),
-                          // onPressed: () {
-                          //   Navigator.push(
-                          //     context,
-                          //     MaterialPageRoute(
-                          //         builder: (context) => EditProfilePage()),
-                          //   );
-                          // },
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => EditProfilePage()),
+                            );
+                          },
                         ),
                       ),
                       SizedBox(
