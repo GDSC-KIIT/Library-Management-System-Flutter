@@ -12,7 +12,7 @@ class Library extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       home: SplashScreen(),
       routes: {
         LoginPage.id: (context) => LoginPage(),

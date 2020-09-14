@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:library_system/pages/addNewBookPage.dart';
 import 'package:library_system/pages/inventoryPage.dart';
 import 'package:library_system/pages/issueBookPage.dart';
+import 'package:library_system/pages/profilepage.dart';
 import 'package:library_system/pages/returnBookPage.dart';
 
 class HomePage extends StatefulWidget {
@@ -41,10 +42,9 @@ class _HomePageState extends State<HomePage> {
                     color: Color(0xFFDD3617),
                   ),
                   onPressed: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (BuildContext context) {},
-                      ),
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ProfilePage()),
                     );
                   },
                 ),

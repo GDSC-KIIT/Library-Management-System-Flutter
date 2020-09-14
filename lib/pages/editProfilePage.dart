@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:library_system/pages/editProfilePage.dart';
-import 'package:library_system/pages/homePage.dart';
+import 'package:library_system/pages/profilepage.dart';
 
-class ProfilePage extends StatefulWidget {
-  ProfilePage({Key key}) : super(key: key);
+class EditProfilePage extends StatefulWidget {
+  EditProfilePage({Key key}) : super(key: key);
 
   @override
-  _ProfilePageState createState() => _ProfilePageState();
+  _EditProfilePageState createState() => _EditProfilePageState();
 }
 
-class _ProfilePageState extends State<ProfilePage> {
+class _EditProfilePageState extends State<EditProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,6 +51,30 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                     ),
                     Container(
+                      height: 150,
+                      width: 150,
+                      child: Container(
+                        alignment: Alignment.bottomRight,
+                        child: Icon(
+                          Icons.add_a_photo,
+                          size: 40,
+                          color: Colors.black54,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      alignment: Alignment.bottomCenter,
+                      height: 225,
+                      child: Text(
+                        'Remove',
+                        style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    Container(
                       alignment: Alignment.bottomCenter,
                       height: 335,
                       child: Row(
@@ -65,22 +88,42 @@ class _ProfilePageState extends State<ProfilePage> {
                               fontFamily: 'Montserrat',
                             ),
                           ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Icon(
+                            Icons.edit,
+                            color: Colors.white,
+                          ),
                         ],
                       ),
                     ),
                     Container(
                       alignment: Alignment.bottomCenter,
                       height: 390,
-                      child: Opacity(
-                        opacity: 0.7,
-                        child: Text(
-                          'Admin',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 14,
-                              fontFamily: 'Montserrat',
-                              fontWeight: FontWeight.bold),
-                        ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Opacity(
+                            opacity: 0.7,
+                            child: Text(
+                              'Admin',
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 14,
+                                  fontFamily: 'Montserrat',
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Icon(
+                            Icons.edit,
+                            color: Colors.white,
+                            size: 10,
+                          ),
+                        ],
                       ),
                     ),
                   ],
@@ -109,6 +152,11 @@ class _ProfilePageState extends State<ProfilePage> {
                         fontSize: 15,
                       ),
                     ),
+                    trailing: Icon(
+                      Icons.edit,
+                      color: Color(0xFF584846),
+                      size: 22,
+                    ),
                   ),
                   ListTile(
                     leading: Icon(
@@ -130,6 +178,11 @@ class _ProfilePageState extends State<ProfilePage> {
                         fontSize: 15,
                       ),
                     ),
+                    trailing: Icon(
+                      Icons.edit,
+                      color: Color(0xFF584846),
+                      size: 22,
+                    ),
                   ),
                   Row(
                     children: <Widget>[
@@ -141,33 +194,19 @@ class _ProfilePageState extends State<ProfilePage> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(12)),
                           color: Color(0xFF584846),
-                          child: Text("Edit",
+                          child: Text("Previous",
                               style: TextStyle(color: Colors.white)),
                           onPressed: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => EditProfilePage()),
+                                  builder: (context) => ProfilePage()),
                             );
                           },
                         ),
                       ),
                       SizedBox(
                         width: 30,
-                      ),
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => HomePage(),
-                            ),
-                          );
-                        },
-                        child: Icon(
-                          Icons.home,
-                          color: Color(0xFF584846),
-                        ),
                       ),
                       SizedBox(
                         width: 30,
@@ -177,7 +216,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(12)),
                           color: Color(0xFF584846),
-                          child: Text("Logout",
+                          child: Text("Save",
                               style: TextStyle(color: Colors.white)),
                           onPressed: () {},
                         ),
@@ -187,19 +226,6 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                     ],
                   ),
-                  // Row(
-                  //   children: [
-                  //     Container(
-                  //       child: MaterialButton(
-                  //         shape: RoundedRectangleBorder(
-                  //             borderRadius: BorderRadius.circular(12)),
-                  //         color: Colors.red,
-                  //         child: Text('Logout'),
-                  //         onPressed: () {},
-                  //       ),
-                  //     ),
-                  //   ],
-                  // )
                 ],
               )
             ],
