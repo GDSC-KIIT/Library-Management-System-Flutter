@@ -1,8 +1,15 @@
+
+import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:library_system/models/Book_model.dart';
 import 'package:library_system/pages/addNewBookPage.dart';
+
 import 'package:library_system/pages/inventoryPage.dart';
 import 'package:library_system/pages/issueBookPage.dart';
+import 'package:library_system/pages/profilepage.dart';
 import 'package:library_system/pages/returnBookPage.dart';
+
 
 class HomePage extends StatefulWidget {
   static String id = 'homepage';
@@ -11,6 +18,41 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  
+
+    Future _scanQR() async {
+      try {
+        String qrResult = await BarcodeScanner.scan();
+        setState(() {
+          result = qrResult;
+        });
+        Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => AddNewBookPage(),
+                      ));
+      } on PlatformException catch (ex) {
+        if (ex.code == BarcodeScanner.CameraAccessDenied) {
+          setState(() {
+            result = "Camera permission was denied";
+          });
+           AddNewBookPage();
+        } else {
+          setState(() {
+            result = "Unknown Error $ex";
+          });
+        }
+      } on FormatException {
+        setState(() {
+          result = "You pressed the back button before scanning anything";
+        });
+      } catch (ex) {
+        setState(() {
+          result = "Unknown Error $ex";
+        });
+      }
+     
+     
+    }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,10 +83,9 @@ class _HomePageState extends State<HomePage> {
                     color: Color(0xFFDD3617),
                   ),
                   onPressed: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (BuildContext context) {},
-                      ),
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ProfilePage()),
                     );
                   },
                 ),
@@ -97,12 +138,7 @@ class _HomePageState extends State<HomePage> {
           display1(
             context,
             () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => AddNewBookPage(),
-                ),
-              );
+              _scanQR();
             },
             "ADD NEW BOOK",
             Colors.white38,

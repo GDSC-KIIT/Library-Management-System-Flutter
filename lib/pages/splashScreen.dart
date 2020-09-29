@@ -15,7 +15,7 @@ class UIConstants {
   static fitToHeight(value, BuildContext context) => _fitContext(context,
       ASSUMED_SCREEN_HEIGHT, MediaQuery.of(context).size.height, value);
 
-  static const splashScreenLogo = 'assets/images/book.png';
+  static const splashScreenLogo = 'assets/images/splashbg.png';
 }
 
 class SplashScreen extends StatefulWidget {
@@ -46,14 +46,17 @@ class _SplashScreenState extends State<SplashScreen> {
       backgroundColor: Color(0xFFE0B485),
       body: Center(
         child: Container(
-          height: UIConstants.fitToHeight(710, context),
-          width: UIConstants.fitToWidth(375, context),
+          // height: UIConstants.fitToHeight(710, context),
+          // width: UIConstants.fitToWidth(375, context),
+          height: MediaQuery.of(context).size.height,
+          width: MediaQuery.of(context).size.width,
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage(UIConstants.splashScreenLogo),
+              image: AssetImage('assets/images/splashbg.png',),
               fit: BoxFit.cover,
             ),
           ),
+          child: ,
         ),
       ),
     );

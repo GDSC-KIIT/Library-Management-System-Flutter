@@ -5,14 +5,16 @@ import 'package:library_system/pages/signup.dart';
 import 'package:library_system/pages/splashScreen.dart';
 
 void main() {
-  runApp(Library());
+  
+      runApp(Library());
+    
 }
 
 class Library extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       home: SplashScreen(),
       routes: {
         LoginPage.id: (context) => LoginPage(),
