@@ -1,4 +1,3 @@
-
 import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -10,7 +9,6 @@ import 'package:library_system/pages/issueBookPage.dart';
 import 'package:library_system/pages/profilepage.dart';
 import 'package:library_system/pages/returnBookPage.dart';
 
-
 class HomePage extends StatefulWidget {
   static String id = 'homepage';
   @override
@@ -18,41 +16,41 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  
-
-    Future _scanQR() async {
-      try {
-        String qrResult = await BarcodeScanner.scan();
+  Future _scanQR() async {
+    try {
+      String qrResult = await BarcodeScanner.scan();
+      setState(() {
+        result = qrResult;
+      });
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => AddNewBookPage(
+              isbn: result,
+            ),
+          ));
+    } on PlatformException catch (ex) {
+      if (ex.code == BarcodeScanner.CameraAccessDenied) {
         setState(() {
-          result = qrResult;
+          result = "Camera permission was denied";
         });
-        Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => AddNewBookPage(),
-                      ));
-      } on PlatformException catch (ex) {
-        if (ex.code == BarcodeScanner.CameraAccessDenied) {
-          setState(() {
-            result = "Camera permission was denied";
-          });
-           AddNewBookPage();
-        } else {
-          setState(() {
-            result = "Unknown Error $ex";
-          });
-        }
-      } on FormatException {
-        setState(() {
-          result = "You pressed the back button before scanning anything";
-        });
-      } catch (ex) {
+        AddNewBookPage();
+      } else {
         setState(() {
           result = "Unknown Error $ex";
         });
       }
-     
-     
+    } on FormatException {
+      setState(() {
+        result = "You pressed the back button before scanning anything";
+      });
+    } catch (ex) {
+      setState(() {
+        result = "Unknown Error $ex";
+      });
     }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
