@@ -10,6 +10,23 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  @override
+  void initState() {
+    _auth.currentUser().then((value) {
+      print(value.uid);
+      if (value.uid != null) {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => HomePage()));
+      }
+    });
+    super.initState();
+  }
+
+  void skiplogin() {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => HomePage()));
+  }
+
   final _auth = FirebaseAuth.instance;
   String email;
   String password;
