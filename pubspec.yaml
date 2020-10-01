@@ -21,6 +21,7 @@ dependencies:
   splashscreen: ^1.2.0
   barcode_scan: ^1.0.0
   uuid: ^2.2.2
+  fluttertoast: ^7.1.1
   
 
 dev_dependencies:

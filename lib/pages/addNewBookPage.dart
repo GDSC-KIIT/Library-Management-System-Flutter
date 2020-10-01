@@ -4,13 +4,7 @@
   import 'package:flutter/material.dart';
 
   import 'package:firebase_database/firebase_database.dart';
-import 'package:library_system/models/Book_model.dart';
- // import 'package:firebase_database/ui/firebase_animated_list.dart';
- 
-
-  
-
-  
+  import 'package:library_system/models/Book_model.dart';
  
 
   class AddNewBookPage extends StatefulWidget {
@@ -47,33 +41,7 @@ import 'package:library_system/models/Book_model.dart';
     }
     
 
-    /*Future _scanQR() async {
-      try {
-        String qrResult = await BarcodeScanner.scan();
-        setState(() {
-          result = qrResult;
-
-        });
-      } on PlatformException catch (ex) {
-        if (ex.code == BarcodeScanner.CameraAccessDenied) {
-          setState(() {
-            result = "Camera permission was denied";
-          });
-        } else {
-          setState(() {
-            result = "Unknown Error $ex";
-          });
-        }
-      } on FormatException {
-        setState(() {
-          result = "You pressed the back button before scanning anything";
-        });
-      } catch (ex) {
-        setState(() {
-          result = "Unknown Error $ex";
-        });
-      }
-    }*/
+    
 
     @override
     Widget build(BuildContext context) {
