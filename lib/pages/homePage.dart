@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:library_system/models/Book_model.dart';
 import 'package:library_system/pages/addNewBookPage.dart';
-
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:library_system/pages/inventoryPage.dart';
 import 'package:library_system/pages/issueBookPage.dart';
 import 'package:library_system/pages/profilepage.dart';
@@ -20,6 +20,7 @@ class _HomePageState extends State<HomePage> {
     try {
       String qrResult = await BarcodeScanner.scan();
       setState(() {
+        result = null;
         result = qrResult;
       });
       Navigator.push(
@@ -32,22 +33,79 @@ class _HomePageState extends State<HomePage> {
     } on PlatformException catch (ex) {
       if (ex.code == BarcodeScanner.CameraAccessDenied) {
         setState(() {
-          result = "Camera permission was denied";
+          result = null;
         });
-        AddNewBookPage();
+        Fluttertoast.showToast(
+        msg: "Camera permission was denied",
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.CENTER,
+        timeInSecForIosWeb: 1,
+        backgroundColor: Colors.red,
+        textColor: Colors.white,
+        fontSize: 16.0
+    );
+    Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => AddNewBookPage(
+              isbn: result,
+            ),
+          ));
       } else {
         setState(() {
-          result = "Unknown Error $ex";
+          result = null;
         });
+        Fluttertoast.showToast(
+        msg: "Unknown Error $ex",
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.CENTER,
+        timeInSecForIosWeb: 1,
+        backgroundColor: Colors.red,
+        textColor: Colors.white,
+        fontSize: 16.0
+    );
+    Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => AddNewBookPage(
+              isbn: result,
+            ),
+          ));
       }
     } on FormatException {
       setState(() {
-        result = "You pressed the back button before scanning anything";
+        result = null;
       });
+      Fluttertoast.showToast(
+        msg: "You pressed the back button before scanning anything",
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.CENTER,
+        timeInSecForIosWeb: 1,
+        backgroundColor: Colors.red,
+        textColor: Colors.white,
+        fontSize: 16.0
+    );
+   
     } catch (ex) {
       setState(() {
-        result = "Unknown Error $ex";
+        result = null;
       });
+      Fluttertoast.showToast(
+        msg: "Unknown Error $ex",
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.CENTER,
+        timeInSecForIosWeb: 1,
+        backgroundColor: Colors.red,
+        textColor: Colors.white,
+        fontSize: 16.0
+    );
+    Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => AddNewBookPage(
+              isbn: result,
+            ),
+          ));
     }
   }
 
