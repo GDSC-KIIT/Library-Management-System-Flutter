@@ -2,8 +2,7 @@ import 'package:firebase_database/firebase_database.dart';
 
 //Books is defined here as a class
 
-
-class Books{
+class Books {
   String name;
   String author;
   String uId;
@@ -11,20 +10,22 @@ class Books{
   String key;
   String genre;
   String isbn;
+  String status;
 
-  Books(this.name, this.author, this.uId, this.publisher, this.genre,this.isbn);
+  Books(
+      this.name, this.author, this.uId, this.publisher, this.genre, this.isbn);
 
   Books.fromSnapshot(DataSnapshot snapshot)
-  : key = snapshot.key,
-    name = snapshot.value["name"],
-    author = snapshot.value["author"],
-    uId = snapshot.value["uId"],
-    publisher = snapshot.value["publisher"],
-    genre = snapshot.value["genre"],
-    isbn = snapshot.value["isbn"];
+      : key = snapshot.key,
+        name = snapshot.value["name"],
+        author = snapshot.value["author"],
+        uId = snapshot.value["uId"],
+        publisher = snapshot.value["publisher"],
+        genre = snapshot.value["genre"],
+        isbn = snapshot.value["isbn"],
+        status = snapshot.value["status"];
 
-
-  toJson(){
+  toJson() {
     return {
       "name": name,
       "author": author,
@@ -32,8 +33,10 @@ class Books{
       "publisher": publisher,
       "genre": genre,
       "isbn": isbn,
+      "status": status,
     };
   }
 }
+
 String result = "";
-    
+String reResult = "";

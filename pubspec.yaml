@@ -11,6 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
 
+
   firebase_auth: null
   cloud_firestore: ^0.13.4+2
   firebase_database: ^3.1.6
@@ -22,6 +23,8 @@ dependencies:
   barcode_scan: ^1.0.0
   uuid: ^2.2.2
   fluttertoast: ^7.1.1
+  barcode: ^1.17.0
+  flutter_svg: ^0.19.0
   
 
 dev_dependencies:
