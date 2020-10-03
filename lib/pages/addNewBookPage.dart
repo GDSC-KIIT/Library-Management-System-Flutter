@@ -27,6 +27,7 @@ class _AddNewBookPageState extends State<AddNewBookPage> {
     super.initState();
     book = Books("", "", "", "", "", "");
     book.isbn = widget.isbn;
+    book.status = "IN";
   }
 
   void _handleSubmit() {
