@@ -11,6 +11,7 @@ class Books{
   String key;
   String genre;
   String isbn;
+  String status;
 
   Books(this.name, this.author, this.uId, this.publisher, this.genre,this.isbn);
 
@@ -21,7 +22,8 @@ class Books{
     uId = snapshot.value["uId"],
     publisher = snapshot.value["publisher"],
     genre = snapshot.value["genre"],
-    isbn = snapshot.value["isbn"];
+    isbn = snapshot.value["isbn"],
+    status = snapshot.value["status"];
 
 
   toJson(){
@@ -32,6 +34,7 @@ class Books{
       "publisher": publisher,
       "genre": genre,
       "isbn": isbn,
+      "status": status,
     };
   }
 }
