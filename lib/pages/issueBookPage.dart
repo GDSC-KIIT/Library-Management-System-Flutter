@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_datetime_formfield/flutter_datetime_formfield.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:library_system/models/Book_model.dart';
 import 'package:library_system/pages/homePage.dart';
 
 //wrote by amanv8060
@@ -41,7 +40,6 @@ class _DummyIssueBookState extends State<DummyIssueBook> {
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.done) {
             if (snapshot.hasError) {
-              Navigator.of(context).pop();
               Fluttertoast.showToast(
                   msg: snapshot.error.toString(),
                   toastLength: Toast.LENGTH_SHORT,
