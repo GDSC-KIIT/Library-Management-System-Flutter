@@ -15,7 +15,7 @@ class UIConstants {
   static fitToHeight(value, BuildContext context) => _fitContext(context,
       ASSUMED_SCREEN_HEIGHT, MediaQuery.of(context).size.height, value);
 
-  static const splashScreenLogo = 'assets/images/splashbg.png';
+  static const splashScreenLogo = 'assets/images/logo.png';
 }
 
 class SplashScreen extends StatefulWidget {
@@ -46,17 +46,61 @@ class _SplashScreenState extends State<SplashScreen> {
       backgroundColor: Color(0xFFE0B485),
       body: Center(
         child: Container(
-          // height: UIConstants.fitToHeight(710, context),
-          // width: UIConstants.fitToWidth(375, context),
-          height: MediaQuery.of(context).size.height,
-          width: MediaQuery.of(context).size.width,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('assets/images/splashbg.png',),
-              fit: BoxFit.cover,
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage(
+                  'assets/images/splashbg.png',
+                ),
+                fit: BoxFit.cover,
+              ),
             ),
-          ),
-        ),
+            child: ListView(
+              children: [
+                Column(
+                  children: [
+                    SizedBox(
+                      height: 180,
+                    ),
+                    Container(
+                      height: 220,
+                      width: 220,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage(UIConstants.splashScreenLogo),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'LIBRARY',
+                          style: TextStyle(
+                            color: Color(0xFFDD3617),
+                            fontSize: 28,
+                          ),
+                        ),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        Text(
+                          'MANAGED',
+                          style: TextStyle(
+                            color: Color(0xFF584846),
+                            fontSize: 28,
+                          ),
+                        ),
+                      ],
+                    )
+                  ],
+                )
+              ],
+            ),),
       ),
     );
   }

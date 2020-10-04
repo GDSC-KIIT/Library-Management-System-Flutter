@@ -20,7 +20,6 @@ class _HomePageState extends State<HomePage> {
     try {
       String qrResult = await BarcodeScanner.scan();
       setState(() {
-        result = null;
         result = qrResult;
       });
       Navigator.push(
@@ -36,76 +35,96 @@ class _HomePageState extends State<HomePage> {
           result = null;
         });
         Fluttertoast.showToast(
-        msg: "Camera permission was denied",
-        toastLength: Toast.LENGTH_SHORT,
-        gravity: ToastGravity.CENTER,
-        timeInSecForIosWeb: 1,
-        backgroundColor: Colors.red,
-        textColor: Colors.white,
-        fontSize: 16.0
-    );
-    Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => AddNewBookPage(
-              isbn: result,
-            ),
-          ));
+            msg: "Camera permission was denied",
+            toastLength: Toast.LENGTH_SHORT,
+            gravity: ToastGravity.CENTER,
+            timeInSecForIosWeb: 1,
+            backgroundColor: Colors.red,
+            textColor: Colors.white,
+            fontSize: 16.0);
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => AddNewBookPage(
+                isbn: result,
+              ),
+            ));
       } else {
         setState(() {
           result = null;
         });
         Fluttertoast.showToast(
-        msg: "Unknown Error $ex",
-        toastLength: Toast.LENGTH_SHORT,
-        gravity: ToastGravity.CENTER,
-        timeInSecForIosWeb: 1,
-        backgroundColor: Colors.red,
-        textColor: Colors.white,
-        fontSize: 16.0
-    );
-    Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => AddNewBookPage(
-              isbn: result,
-            ),
-          ));
+            msg: "Unknown Error $ex",
+            toastLength: Toast.LENGTH_SHORT,
+            gravity: ToastGravity.CENTER,
+            timeInSecForIosWeb: 1,
+            backgroundColor: Colors.red,
+            textColor: Colors.white,
+            fontSize: 16.0);
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => AddNewBookPage(
+                isbn: result,
+              ),
+            ));
       }
     } on FormatException {
       setState(() {
         result = null;
       });
       Fluttertoast.showToast(
-        msg: "You pressed the back button before scanning anything",
-        toastLength: Toast.LENGTH_SHORT,
-        gravity: ToastGravity.CENTER,
-        timeInSecForIosWeb: 1,
-        backgroundColor: Colors.red,
-        textColor: Colors.white,
-        fontSize: 16.0
-    );
-   
+          msg: "You pressed the back button before scanning anything",
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.CENTER,
+          timeInSecForIosWeb: 1,
+          backgroundColor: Colors.red,
+          textColor: Colors.white,
+          fontSize: 16.0);
     } catch (ex) {
       setState(() {
         result = null;
       });
       Fluttertoast.showToast(
-        msg: "Unknown Error $ex",
-        toastLength: Toast.LENGTH_SHORT,
-        gravity: ToastGravity.CENTER,
-        timeInSecForIosWeb: 1,
-        backgroundColor: Colors.red,
-        textColor: Colors.white,
-        fontSize: 16.0
-    );
-    Navigator.push(
+          msg: "Unknown Error $ex",
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.CENTER,
+          timeInSecForIosWeb: 1,
+          backgroundColor: Colors.red,
+          textColor: Colors.white,
+          fontSize: 16.0);
+      Navigator.push(
           context,
           MaterialPageRoute(
             builder: (context) => AddNewBookPage(
               isbn: result,
             ),
           ));
+    }
+  }
+
+  Future _scannerQR() async {
+    try {
+      String mainResult = await BarcodeScanner.scan();
+      setState(() {
+        reResult = mainResult;
+      });
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => ReturnBookPage(),
+          ));
+    } on PlatformException catch (ex) {
+      if (ex.code == BarcodeScanner.CameraAccessDenied) {
+        setState(() {});
+      } else {
+        setState(() {});
+      }
+    } on FormatException {
+      setState(() {});
+    } catch (ex) {
+      setState(() {});
+
     }
   }
 
@@ -164,12 +183,7 @@ class _HomePageState extends State<HomePage> {
           display1(
             context,
             () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => ReturnBookPage(),
-                ),
-              );
+              _scannerQR();
             },
             "RETURN BOOK",
             Colors.white38,
