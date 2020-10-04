@@ -207,7 +207,9 @@ class _HomePageState extends State<HomePage> {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => IssueBookPage(),
+                  builder: (context) =>
+                  //  IssueBookPage(barcode:"P2ToQVbmmq1zyX5uV05J")
+                  DummyIssueBook(),
                 ),
               );
             },
