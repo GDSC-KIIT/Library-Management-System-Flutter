@@ -24,7 +24,6 @@ class Books {
         genre = snapshot.value["genre"],
         isbn = snapshot.value["isbn"],
         status = snapshot.value["status"];
-
   toJson() {
     return {
       "name": name,

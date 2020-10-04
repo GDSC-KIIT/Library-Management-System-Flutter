@@ -20,7 +20,6 @@ class _HomePageState extends State<HomePage> {
     try {
       String qrResult = await BarcodeScanner.scan();
       setState(() {
-        result = null;
         result = qrResult;
       });
       Navigator.push(
@@ -125,6 +124,7 @@ class _HomePageState extends State<HomePage> {
       setState(() {});
     } catch (ex) {
       setState(() {});
+
     }
   }
 
