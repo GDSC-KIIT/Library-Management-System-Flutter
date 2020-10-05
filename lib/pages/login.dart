@@ -13,6 +13,9 @@ class _LoginPageState extends State<LoginPage> {
   final _auth = FirebaseAuth.instance;
   String email;
   String password;
+  bool password_check=false;
+  bool email_check=false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,6 +49,7 @@ class _LoginPageState extends State<LoginPage> {
                       borderSide: BorderSide(color: Colors.brown),
                     ),
                     hintText: '\tEnter Email-id',
+                    errorText: email_check ? 'Enter valid email-id!' : null,
                   ),
                 ),
               ),
@@ -65,6 +69,7 @@ class _LoginPageState extends State<LoginPage> {
                       borderSide: BorderSide(color: Color(0xFF584846)),
                     ),
                     hintText: 'Enter Password',
+                    errorText: password_check ? 'Invalid password!' : null,
                   ),
                   obscureText: true,
                 ),
@@ -90,6 +95,12 @@ class _LoginPageState extends State<LoginPage> {
                           if (user != null)
                             Navigator.pushNamed(context, HomePage.id);
                         } catch (e) {
+                          setState(() {
+                            if(email==null){
+                              email_check = true;
+                            }
+                            password_check = true;
+                          });
                           print(e);
                         }
                       },
