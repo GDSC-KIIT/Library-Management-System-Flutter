@@ -1,29 +1,33 @@
-import 'package:firebase_database/firebase_database.dart';
-
 //Books is defined here as a class
 
+import 'package:cloud_firestore/cloud_firestore.dart';
+
 class Books {
-  String name;
-  String author;
-  String uId;
-  String publisher;
-  String key;
-  String genre;
-  String isbn;
-  String status;
+   String name;
+   String author;
+   String uId;
+   String publisher;
+   String genre;
+   String isbn;
+   String status;
 
   Books(
-      this.name, this.author, this.uId, this.publisher, this.genre, this.isbn);
+      {this.name,
+      this.status,
+      this.author,
+      this.uId,
+      this.publisher,
+      this.genre,
+      this.isbn});
 
-  Books.fromSnapshot(DataSnapshot snapshot)
-      : key = snapshot.key,
-        name = snapshot.value["name"],
-        author = snapshot.value["author"],
-        uId = snapshot.value["uId"],
-        publisher = snapshot.value["publisher"],
-        genre = snapshot.value["genre"],
-        isbn = snapshot.value["isbn"],
-        status = snapshot.value["status"];
+  Books.fromSnapshot(DocumentSnapshot snapshot)
+      : name = snapshot.data()["name"],
+        author = snapshot.data()["author"],
+        uId = snapshot.id,
+        publisher = snapshot.data()["publisher"],
+        genre = snapshot.data()["genre"],
+        isbn = snapshot.data()["isbn"],
+        status = snapshot.data()["status"];
   toJson() {
     return {
       "name": name,
