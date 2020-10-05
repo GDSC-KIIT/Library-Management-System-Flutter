@@ -11,19 +11,22 @@ dependencies:
   flutter:
     sdk: flutter
 
-
-  firebase_auth: null
-  cloud_firestore: ^0.13.4+2
-  firebase_database: ^3.1.6
-  firebase_core: ^0.4.5
-
-  cupertino_icons: ^0.1.3
+  firebase_auth: ^0.18.1+1
+  cloud_firestore: ^0.14.1+2
+  firebase_database: ^4.1.0
+  firebase_core: ^0.5.0
+  fluttertoast: ^7.1.1
+  cupertino_icons: ^1.0.0
   custom_splash: ^0.0.2
   splashscreen: ^1.2.0
   barcode_scan: ^1.0.0
   uuid: ^2.2.2
   barcode: ^1.17.0
   flutter_svg: ^0.19.0
+  flutter_datetime_formfield: ^0.1.2
+  pdf: ^1.11.2
+  mailer2: ^1.2.5
+  path_provider: ^1.6.18
 
 dev_dependencies:
   flutter_test:
@@ -33,3 +36,4 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+    - assets/
