@@ -24,6 +24,9 @@ dependencies:
   barcode: ^1.17.0
   flutter_svg: ^0.19.0
   flutter_datetime_formfield: ^0.1.2
+  pdf: ^1.11.2
+  mailer2: ^1.2.5
+  path_provider: ^1.6.18
 
 dev_dependencies:
   flutter_test:
@@ -33,3 +36,4 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+    - assets/

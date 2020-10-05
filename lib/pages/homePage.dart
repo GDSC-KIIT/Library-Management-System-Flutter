@@ -1,3 +1,6 @@
+import 'dart:io';
+import 'dart:typed_data';
+
 import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -8,7 +11,6 @@ import 'package:library_system/pages/inventoryPage.dart';
 import 'package:library_system/pages/issueBookPage.dart';
 import 'package:library_system/pages/profilepage.dart';
 import 'package:library_system/pages/returnBookPage.dart';
-
 class HomePage extends StatefulWidget {
   static String id = 'homepage';
   @override
@@ -124,7 +126,6 @@ class _HomePageState extends State<HomePage> {
       setState(() {});
     } catch (ex) {
       setState(() {});
-
     }
   }
 
@@ -144,10 +145,14 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Icon(
-                      Icons.apps,
-                      color: Color(0xFF584846),
-                      size: 40,
+                    IconButton(
+                      onPressed: () async {
+                      },
+                      icon: Icon(
+                        Icons.apps,
+                        color: Color(0xFF584846),
+                        size: 40,
+                      ),
                     ),
                   ],
                 ),
@@ -222,8 +227,8 @@ class _HomePageState extends State<HomePage> {
                 context,
                 MaterialPageRoute(
                   builder: (context) =>
-                  //  IssueBookPage(barcode:"P2ToQVbmmq1zyX5uV05J")
-                  DummyIssueBook(),
+                      //  IssueBookPage(barcode:"P2ToQVbmmq1zyX5uV05J")
+                      DummyIssueBook(),
                 ),
               );
             },
