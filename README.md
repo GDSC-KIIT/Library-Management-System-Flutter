@@ -1,4 +1,4 @@
-![Banner](https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/regular.png)
+![Banner](https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/online_library%402x.png)
 
 
 
