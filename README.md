@@ -2,6 +2,10 @@
 
 
 
+# Library Management System
+
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Sayak11/Libaray-Management-System-Flutter?include_prereleases)
+
 
 
 
@@ -10,6 +14,4 @@ going digital so the tedious job of writing everything in paper will be sorted w
 app will help them to add books by scanning the barcodes and the title of the book. After
 adding their books. There will be a section in that app where they can give out the books.
 
-
-# Library Management System
 A new Flutter project.
