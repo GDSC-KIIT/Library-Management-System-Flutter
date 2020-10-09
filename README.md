@@ -1,3 +1,10 @@
+![Banner](https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/regular.png)
+
+
+
+
+
+
 This flutter application is for the users who are in charge of the library. The whole system is
 going digital so the tedious job of writing everything in paper will be sorted with this app. This
 app will help them to add books by scanning the barcodes and the title of the book. After
