@@ -5,6 +5,11 @@
 # Library Management System
 
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Sayak11/Libaray-Management-System-Flutter?include_prereleases)
+![GitHub last commit](https://img.shields.io/github/last-commit/Sayak11/Libaray-Management-System-Flutter)
+![GitHub issues](https://img.shields.io/github/issues-raw/Sayak11/Libaray-Management-System-Flutter)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/Sayak11/Libaray-Management-System-Flutter)
+![GitHub](https://img.shields.io/github/license/Sayak11/Libaray-Management-System-Flutter)
+
 
 
 
