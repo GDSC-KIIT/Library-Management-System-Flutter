@@ -27,3 +27,20 @@ app will help them to add books by scanning the barcodes and the title of the bo
 adding their books. There will be a section in that app where they can give out the books.
 
 A new Flutter project.
+
+
+
+
+## The All Contributors Table
+Below is an example of how using the all-contributors spec table can recognize all contributors
+<div align="center">
+    <img src="docs/assets/contributors-table-small.png" alt="All Contributors Table Screenshot" width="800px" />
+</div>
+
+> You can use [the @all-contributors bot 🤖](https://allcontributors.org/docs/en/bot/overview) to automate acknowledging contributors to your open source projects
+
+## Specification
+The [specification](https://allcontributors.org) is detailed on [allcontributors.org](https://allcontributors.org)
+
+## Emoji key
+The [Emoji Key](https://allcontributors.org/docs/en/emoji-key) ✨ (and Contribution Types) can be found on [allcontributors.org](https://allcontributors.org)
