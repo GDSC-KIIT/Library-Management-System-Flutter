@@ -27,7 +27,7 @@ app will help them to add books by scanning the barcodes and the title of the bo
 adding their books. There will be a section in that app where they can give out the books.
 
 # 𝔸𝕡𝕡 ℙ𝕣𝕖𝕧𝕚𝕖𝕨 -
-![](https://kapwi.ng/c/MikJ6NBO.gif)
+![](https://kapwi.ng/c/MikJ6NBO)
 
   ## 𝔾𝕖𝕥𝕥𝕚𝕟𝕘 𝕊𝕥𝕒𝕣𝕥𝕖𝕕 -
 
