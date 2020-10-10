@@ -16,6 +16,7 @@
     <a href="https://android-arsenal.com/api?level=28">
         <img src="https://img.shields.io/badge/API-28%2B-orange.svg?style=flat"/>
     </a>
+    [![Star on GitHub](https://img.shields.io/github/stars/all-contributors/all-contributors.svg?style=social)](https://github.com/all-contributors/all-contributors/stargazers)
 
 
 
@@ -31,16 +32,3 @@ A new Flutter project.
 
 
 
-## The All Contributors Table
-Below is an example of how using the all-contributors spec table can recognize all contributors
-<div align="center">
-    <img src="docs/assets/contributors-table-small.png" alt="All Contributors Table Screenshot" width="800px" />
-</div>
-
-> You can use [the @all-contributors bot 🤖](https://allcontributors.org/docs/en/bot/overview) to automate acknowledging contributors to your open source projects
-
-## Specification
-The [specification](https://allcontributors.org) is detailed on [allcontributors.org](https://allcontributors.org)
-
-## Emoji key
-The [Emoji Key](https://allcontributors.org/docs/en/emoji-key) ✨ (and Contribution Types) can be found on [allcontributors.org](https://allcontributors.org)
