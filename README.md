@@ -28,7 +28,7 @@ adding their books. There will be a section in that app where they can give out 
 
 # 𝔸𝕡𝕡 ℙ𝕣𝕖𝕧𝕚𝕖𝕨 -
 <img src='https://kapwi.ng/c/MikJ6NBO' width='300' style='display:inline-block' alt='gif preview' />
-  
+  ![gif](https://kapwi.ng/c/MikJ6NBO.gif)
 
   ## 𝔾𝕖𝕥𝕥𝕚𝕟𝕘 𝕊𝕥𝕒𝕣𝕥𝕖𝕕 -
 
