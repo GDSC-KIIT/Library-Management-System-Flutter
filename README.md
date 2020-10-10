@@ -28,6 +28,7 @@ adding their books. There will be a section in that app where they can give out 
 
 # 𝔸𝕡𝕡 ℙ𝕣𝕖𝕧𝕚𝕖𝕨 -
 ![Random GIF](https://media.giphy.com/media/FFk8Hxij53t2u4y3mv/giphy.gif)
+<a href="url"><img src="https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/Screenshot_2020-10-10-21-42-19-333_com.example.library_system.jpg" align="left" height="48" width="48" ></a>
 
 ## 𝔾𝕖𝕥𝕥𝕚𝕟𝕘 𝕊𝕥𝕒𝕣𝕥𝕖𝕕 -
 
