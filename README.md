@@ -8,7 +8,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/sayannath/Libaray-Management-System-Flutter)
 ![GitHub issues](https://img.shields.io/github/issues-raw/sayannath/Libaray-Management-System-Flutter)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/sayannath/Libaray-Management-System-Flutter)
-![GitHub](https://img.shields.io/github/license/sayannath/Libaray-Management-System-Flutter)
+![GitHub](https://img.shields.io/github/license/Sayak11/Libaray-Management-System-Flutter)
    </a>
     <!-- API -->
     <a href="https://android-arsenal.com/api?level=28">
