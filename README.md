@@ -34,7 +34,7 @@ adding their books. There will be a section in that app where they can give out 
 # 𝕋𝕒𝕓𝕝𝕖 𝕠𝕗 𝕔𝕠𝕟𝕥𝕖𝕟𝕥𝕤 -
 
 - [Project Title](#project-title)
-- [About](#𝔸𝕓𝕠𝕦𝕥)
+- ![About](https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/README.md#%F0%9D%94%B8%F0%9D%95%93%F0%9D%95%A0%F0%9D%95%A6%F0%9D%95%A5--)
 - [App Preview](#𝔸𝕡𝕡 ℙ𝕣𝕖𝕧𝕚𝕖𝕨 -)
 - [Table of contents](#𝕋𝕒𝕓𝕝𝕖 𝕠𝕗 𝕔𝕠𝕟𝕥𝕖𝕟𝕥𝕤 -)
 - [Getting Started](#𝔾𝕖𝕥𝕥𝕚𝕟𝕘 𝕊𝕥𝕒𝕣𝕥𝕖𝕕 -)
