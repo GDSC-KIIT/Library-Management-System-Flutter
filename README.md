@@ -27,8 +27,8 @@ app will help them to add books by scanning the barcodes and the title of the bo
 adding their books. There will be a section in that app where they can give out the books.
 
 # 𝔸𝕡𝕡 ℙ𝕣𝕖𝕧𝕚𝕖𝕨 -
-![Random GIF](https://media.giphy.com/media/FFk8Hxij53t2u4y3mv/giphy.gif)  
-<a href="url"><img src="https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/Screenshot_2020-10-10-21-42-19-333_com.example.library_system.jpg" align="left" height="500" width="1000" ></a>    
+<a href="url"><img src="https://media.giphy.com/media/FFk8Hxij53t2u4y3mv/giphy.gif" align="left" height="125" width="250" ></a> 
+<a href="url"><img src="https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/Screenshot_2020-10-10-21-42-19-333_com.example.library_system.jpg" align="left" height="125" width="250" ></a>    
   
 
   ## 𝔾𝕖𝕥𝕥𝕚𝕟𝕘 𝕊𝕥𝕒𝕣𝕥𝕖𝕕 -
