@@ -60,6 +60,7 @@ flutter run
 <a name="contributors"></a>
 
 # 𝕃𝕚𝕔𝕖𝕟𝕤𝕖 -
+This project is under [MIT Licence](https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/LICENSE)
 
 
 # ℂ𝕠𝕟𝕥𝕣𝕚𝕓𝕦𝕥𝕠𝕣𝕤 -
