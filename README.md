@@ -39,8 +39,8 @@ adding their books. There will be a section in that app where they can give out 
 8.) [Rupanshi Chawda](https://github.com/rupanshi-chawda)  
 9.) [Sayak Roy Chowdhury](https://github.com/Sayak11)  
 
-<img align="left" width="100" height="50" src="https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/download%20(1).png">  
 𝓐 [DSC KIIT](https://github.com/DSC-KIIT) 𝓟𝓻𝓸𝓳𝓮𝓬𝓽
+<img align="left" width="100" height="100" src="https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/download%20(1).png">  
 
 
 
