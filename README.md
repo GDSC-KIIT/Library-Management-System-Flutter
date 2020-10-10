@@ -33,7 +33,7 @@ adding their books. There will be a section in that app where they can give out 
 
 # 𝕋𝕒𝕓𝕝𝕖 𝕠𝕗 𝕔𝕠𝕟𝕥𝕖𝕟𝕥𝕤 -
 
-- [Project Title](#𝕃𝕚𝕓𝕣𝕒𝕣𝕪 𝕄𝕒𝕟𝕒𝕘𝕖𝕞𝕖𝕟𝕥 𝕊𝕪𝕤𝕥𝕖𝕞 📚📚)
+- [Project Title](#project-title)
 - [About](#𝔸𝕓𝕠𝕦𝕥 -)
 - [App Preview](#𝔸𝕡𝕡 ℙ𝕣𝕖𝕧𝕚𝕖𝕨 -)
 - [Table of contents](#𝕋𝕒𝕓𝕝𝕖 𝕠𝕗 𝕔𝕠𝕟𝕥𝕖𝕟𝕥𝕤 -)
