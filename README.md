@@ -19,42 +19,45 @@
 
 
 
-
+- <a name="about"></a>
 # 𝔸𝕓𝕠𝕦𝕥 -
 This flutter application is for the users who are in charge of the library. The whole system is
 going digital so the tedious job of writing everything in paper will be sorted with this app. This
 app will help them to add books by scanning the barcodes and the title of the book. After
 adding their books. There will be a section in that app where they can give out the books.
 
+- <a name="preview"></a>
 # 𝔸𝕡𝕡 ℙ𝕣𝕖𝕧𝕚𝕖𝕨 -
 ![Random GIF](https://media.giphy.com/media/TTEQuQDISXm2t5Klyj/giphy.gif)
 ![Random GIF](https://media.giphy.com/media/XVt7WWMUBHT6ZZgQ0T/giphy.gif)
 
-
+- <a name="contents"></a>
 # 𝕋𝕒𝕓𝕝𝕖 𝕠𝕗 𝕔𝕠𝕟𝕥𝕖𝕟𝕥𝕤 -
 
-- <a name="title"></a>
 - [ Description. ](#title)
-- ![About](https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/README.md#%F0%9D%94%B8%F0%9D%95%93%F0%9D%95%A0%F0%9D%95%A6%F0%9D%95%A5--)
-- [App Preview](#𝔸𝕡𝕡 ℙ𝕣𝕖𝕧𝕚𝕖𝕨 -)
-- [Table of contents](#𝕋𝕒𝕓𝕝𝕖 𝕠𝕗 𝕔𝕠𝕟𝕥𝕖𝕟𝕥𝕤 -)
-- [Getting Started](#𝔾𝕖𝕥𝕥𝕚𝕟𝕘 𝕊𝕥𝕒𝕣𝕥𝕖𝕕 -)
-- [Application](#𝔸𝕡𝕡𝕝𝕚𝕔𝕒𝕥𝕚𝕠𝕟 -)
-- [Contributers](#ℂ𝕠𝕟𝕥𝕣𝕚𝕓𝕦𝕥𝕠𝕣𝕤 -)
+- ![About](#about)
+- [App Preview](#preview)
+- [Table of contents](#contents)
+- [Getting Started](#getting-started)
+- [Application](#application)
+- [Contributers](#contributors)
  
-
+- <a name="getting-started"></a>
   ## 𝔾𝕖𝕥𝕥𝕚𝕟𝕘 𝕊𝕥𝕒𝕣𝕥𝕖𝕕 -
 
 To clone this repo and look into the source code, go to the terminal in your workspace and then type -
 ```
 git clone https://github.com/sayannath/Libaray-Management-System-Flutter.git
 ```
-
+- <a name="application"></a>
 ## 𝔸𝕡𝕡𝕝𝕚𝕔𝕒𝕥𝕚𝕠𝕟 -
 ```
 flutter run 
 ```
 #### [import the project in Android Studio or Visual Studio Code as you wish and add your ideas to improve the app.]
+
+
+[Go to the top ](#title)
 # ℂ𝕠𝕟𝕥𝕣𝕚𝕓𝕦𝕥𝕠𝕣𝕤 -
 1.) [Sambit Majhi](https://github.com/sambitraze?tab=overview&from=2019-12-01&to=2019-12-31)  
 2.) [Rohan Roy Chowdhury](https://github.com/Rohan2309)  
