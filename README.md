@@ -28,8 +28,7 @@ adding their books. There will be a section in that app where they can give out 
 
 <a name="preview"></a>
 # 𝔸𝕡𝕡 ℙ𝕣𝕖𝕧𝕚𝕖𝕨 -
-![Random GIF](https://media.giphy.com/media/TTEQuQDISXm2t5Klyj/giphy.gif)
-![Random GIF](https://media.giphy.com/media/XVt7WWMUBHT6ZZgQ0T/giphy.gif)
+![Random GIF](https://media.giphy.com/media/TTEQuQDISXm2t5Klyj/giphy.gif)![Random GIF](https://media.giphy.com/media/XVt7WWMUBHT6ZZgQ0T/giphy.gif)
 
 <a name="contents"></a>
 # 𝕋𝕒𝕓𝕝𝕖 𝕠𝕗 𝕔𝕠𝕟𝕥𝕖𝕟𝕥𝕤 -
