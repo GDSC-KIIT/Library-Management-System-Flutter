@@ -16,7 +16,8 @@
     <a href="https://android-arsenal.com/api?level=28">
         <img src="https://img.shields.io/badge/API-28%2B-orange.svg?style=flat"/>
     </a>
-    [![Star on GitHub](https://img.shields.io/github/stars/all-contributors/all-contributors.svg?style=social)](https://github.com/all-contributors/all-contributors/stargazers)
+    [![Star on GitHub](https://img.shields.io/github/stars/sayannath/Libaray-Management-System-Flutter.svg?style=social)](https://github.com/all-contributors/all-contributors/stargazers)
+    [![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
 
 
 
