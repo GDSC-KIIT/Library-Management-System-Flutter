@@ -19,19 +19,19 @@
 
 
 
-- <a name="about"></a>
+<a name="about"></a>
 # 𝔸𝕓𝕠𝕦𝕥 -
 This flutter application is for the users who are in charge of the library. The whole system is
 going digital so the tedious job of writing everything in paper will be sorted with this app. This
 app will help them to add books by scanning the barcodes and the title of the book. After
 adding their books. There will be a section in that app where they can give out the books.
 
-- <a name="preview"></a>
+<a name="preview"></a>
 # 𝔸𝕡𝕡 ℙ𝕣𝕖𝕧𝕚𝕖𝕨 -
 ![Random GIF](https://media.giphy.com/media/TTEQuQDISXm2t5Klyj/giphy.gif)
 ![Random GIF](https://media.giphy.com/media/XVt7WWMUBHT6ZZgQ0T/giphy.gif)
 
-- <a name="contents"></a>
+<a name="contents"></a>
 # 𝕋𝕒𝕓𝕝𝕖 𝕠𝕗 𝕔𝕠𝕟𝕥𝕖𝕟𝕥𝕤 -
 
 - [ Description. ](#title)
@@ -42,14 +42,14 @@ adding their books. There will be a section in that app where they can give out 
 - [Application](#application)
 - [Contributers](#contributors)
  
-- <a name="getting-started"></a>
+<a name="getting-started"></a>
   ## 𝔾𝕖𝕥𝕥𝕚𝕟𝕘 𝕊𝕥𝕒𝕣𝕥𝕖𝕕 -
 
 To clone this repo and look into the source code, go to the terminal in your workspace and then type -
 ```
 git clone https://github.com/sayannath/Libaray-Management-System-Flutter.git
 ```
-- <a name="application"></a>
+<a name="application"></a>
 ## 𝔸𝕡𝕡𝕝𝕚𝕔𝕒𝕥𝕚𝕠𝕟 -
 ```
 flutter run 
@@ -57,7 +57,7 @@ flutter run
 #### [import the project in Android Studio or Visual Studio Code as you wish and add your ideas to improve the app.]
 
 
-[Go to the top ](#title)
+<a name="contributors"></a>
 # ℂ𝕠𝕟𝕥𝕣𝕚𝕓𝕦𝕥𝕠𝕣𝕤 -
 1.) [Sambit Majhi](https://github.com/sambitraze?tab=overview&from=2019-12-01&to=2019-12-31)  
 2.) [Rohan Roy Chowdhury](https://github.com/Rohan2309)  
@@ -68,6 +68,8 @@ flutter run
 7.) [Taranpreet Singh Chabbra](https://github.com/singhtaran1005)  
 8.) [Rupanshi Chawda](https://github.com/rupanshi-chawda)  
 9.) [Sayak Roy Chowdhury](https://github.com/Sayak11)  
+
+[Go to the top ](#title)
 
 # 𝔸 [DSC KIIT](https://github.com/DSC-KIIT) ℙ𝕣𝕠𝕛𝕖𝕔𝕥  
 ![Banner](https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/download%20(1).png)  
