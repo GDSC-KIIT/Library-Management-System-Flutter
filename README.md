@@ -4,11 +4,11 @@
 ![Banner](https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/online_library%402x.png)
 
 
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Sayak11/Libaray-Management-System-Flutter?include_prereleases)
-![GitHub last commit](https://img.shields.io/github/last-commit/Sayak11/Libaray-Management-System-Flutter)
-![GitHub issues](https://img.shields.io/github/issues-raw/Sayak11/Libaray-Management-System-Flutter)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/Sayak11/Libaray-Management-System-Flutter)
-![GitHub](https://img.shields.io/github/license/Sayak11/Libaray-Management-System-Flutter)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/sayannath/Libaray-Management-System-Flutter?include_prereleases)
+![GitHub last commit](https://img.shields.io/github/last-commit/sayannath/Libaray-Management-System-Flutter)
+![GitHub issues](https://img.shields.io/github/issues-raw/sayannath/Libaray-Management-System-Flutter)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/sayannath/Libaray-Management-System-Flutter)
+![GitHub](https://img.shields.io/github/license/sayannath/Libaray-Management-System-Flutter)
    <a href="https://bintray.com/nisrulz/maven/com.github.nisrulz%3Aeasydeviceinfo/_latestVersion">
         <img src="https://api.bintray.com/packages/nisrulz/maven/com.github.nisrulz%3Aeasydeviceinfo/images/download.svg"/>
     </a>
