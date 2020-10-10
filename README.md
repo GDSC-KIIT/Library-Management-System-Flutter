@@ -26,9 +26,11 @@ going digital so the tedious job of writing everything in paper will be sorted w
 app will help them to add books by scanning the barcodes and the title of the book. After
 adding their books. There will be a section in that app where they can give out the books.
 
-# ℙ𝕣𝕖𝕧𝕚𝕖𝕨 -
+# 𝔸𝕡𝕡 ℙ𝕣𝕖𝕧𝕚𝕖𝕨 -
 
-A [DSC KIIT](https://github.com/DSC-KIIT) Project
+# ℂ𝕠𝕟𝕥𝕣𝕚𝕓𝕦𝕥𝕠𝕣𝕤 -
+
+𝓐 [DSC KIIT](https://github.com/DSC-KIIT) 𝓟𝓻𝓸𝓳𝓮𝓬𝓽
 
 ![Banner](https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/download%20(1).png)
 
