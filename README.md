@@ -29,15 +29,15 @@ adding their books. There will be a section in that app where they can give out 
 # 𝔸𝕡𝕡 ℙ𝕣𝕖𝕧𝕚𝕖𝕨 -
 
 # ℂ𝕠𝕟𝕥𝕣𝕚𝕓𝕦𝕥𝕠𝕣𝕤 -
-1.) [Sambit Majhi](https://github.com/sambitraze?tab=overview&from=2019-12-01&to=2019-12-31)(\n)
-2.) [Rohan Roy Chowdhury](https://github.com/Rohan2309)
-3.) [Sayan Nath](https://github.com/sayannath)
-4.) [Aditya Das](https://github.com/ThatOneTallKid)
-5.) [Ayushi Das](https://github.com/Ayushi673)
-6.) [Aman Verma](https://github.com/amanv8060)
-7.) [Taranpreet Singh Chabbra](https://github.com/singhtaran1005)
-8.) [Rupanshi Chawda](https://github.com/rupanshi-chawda)
-9.) [Sayak Roy Chowdhury](https://github.com/Sayak11)
+1.) [Sambit Majhi](https://github.com/sambitraze?tab=overview&from=2019-12-01&to=2019-12-31)  
+2.) [Rohan Roy Chowdhury](https://github.com/Rohan2309)  
+3.) [Sayan Nath](https://github.com/sayannath)  
+4.) [Aditya Das](https://github.com/ThatOneTallKid)  
+5.) [Ayushi Das](https://github.com/Ayushi673)  
+6.) [Aman Verma](https://github.com/amanv8060)  
+7.) [Taranpreet Singh Chabbra](https://github.com/singhtaran1005)  
+8.) [Rupanshi Chawda](https://github.com/rupanshi-chawda)  
+9.) [Sayak Roy Chowdhury](https://github.com/Sayak11)  
 
 
 𝓐 [DSC KIIT](https://github.com/DSC-KIIT) 𝓟𝓻𝓸𝓳𝓮𝓬𝓽
