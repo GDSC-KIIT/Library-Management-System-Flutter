@@ -1,8 +1,8 @@
-![Banner](https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/online_library%402x.png)
-
-
 
 # Library Management System
+
+![Banner](https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/online_library%402x.png)
+
 
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Sayak11/Libaray-Management-System-Flutter?include_prereleases)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Sayak11/Libaray-Management-System-Flutter)
