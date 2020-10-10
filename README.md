@@ -28,10 +28,10 @@ adding their books. There will be a section in that app where they can give out 
 
 # ℙ𝕣𝕖𝕧𝕚𝕖𝕨 -
 
+A [DSC KIIT](https://github.com/DSC-KIIT) Project
 
 
 ![Banner](https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/download%20(1).png)
-A [DSC KIIT](https://github.com/DSC-KIIT) Project
 
 
 
