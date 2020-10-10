@@ -9,9 +9,12 @@
 ![GitHub issues](https://img.shields.io/github/issues-raw/Sayak11/Libaray-Management-System-Flutter)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/Sayak11/Libaray-Management-System-Flutter)
 ![GitHub](https://img.shields.io/github/license/Sayak11/Libaray-Management-System-Flutter)
-  <!-- API -->
-    <a href="https://android-arsenal.com/api?level=28">
-        <img src="https://img.shields.io/badge/API-28%2B-orange.svg?style=flat"/>
+   <a href="https://bintray.com/nisrulz/maven/com.github.nisrulz%3Aeasydeviceinfo/_latestVersion">
+        <img src="https://api.bintray.com/packages/nisrulz/maven/com.github.nisrulz%3Aeasydeviceinfo/images/download.svg"/>
+    </a>
+    <!-- API -->
+    <a href="https://android-arsenal.com/api?level=14">
+        <img src="https://img.shields.io/badge/API-14%2B-orange.svg?style=flat"/>
     </a>
 
 
