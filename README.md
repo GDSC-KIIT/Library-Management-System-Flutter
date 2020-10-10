@@ -28,6 +28,18 @@ adding their books. There will be a section in that app where they can give out 
 
 # 𝔸𝕡𝕡 ℙ𝕣𝕖𝕧𝕚𝕖𝕨 -
 
+## 𝔾𝕖𝕥𝕥𝕚𝕟𝕘 𝕊𝕥𝕒𝕣𝕥𝕖𝕕 -
+
+To clone this repo and look into the source code, go to the terminal in your workspace and then type -
+```
+git clone https://github.com/sayannath/Libaray-Management-System-Flutter.git
+```
+
+### Application
+```
+flutter run 
+```
+#### import the project in Android Studio or Visual Studio Code as you wish and add your ideas to improve the app.
 # ℂ𝕠𝕟𝕥𝕣𝕚𝕓𝕦𝕥𝕠𝕣𝕤 -
 1.) [Sambit Majhi](https://github.com/sambitraze?tab=overview&from=2019-12-01&to=2019-12-31)  
 2.) [Rohan Roy Chowdhury](https://github.com/Rohan2309)  
