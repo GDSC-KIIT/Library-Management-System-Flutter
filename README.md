@@ -28,10 +28,10 @@ adding their books. There will be a section in that app where they can give out 
 
 # 𝔸𝕡𝕡 ℙ𝕣𝕖𝕧𝕚𝕖𝕨 -
 ![Random GIF](https://media.giphy.com/media/FFk8Hxij53t2u4y3mv/giphy.gif)  
-<a href="url"><img src="https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/Screenshot_2020-10-10-21-42-19-333_com.example.library_system.jpg" align="left" height="200" width="200" ></a>    
+<a href="url"><img src="https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/Screenshot_2020-10-10-21-42-19-333_com.example.library_system.jpg" align="left" height="500" width="1000" ></a>    
   
 
-## 𝔾𝕖𝕥𝕥𝕚𝕟𝕘 𝕊𝕥𝕒𝕣𝕥𝕖𝕕 -
+  ## 𝔾𝕖𝕥𝕥𝕚𝕟𝕘 𝕊𝕥𝕒𝕣𝕥𝕖𝕕 -
 
 To clone this repo and look into the source code, go to the terminal in your workspace and then type -
 ```
