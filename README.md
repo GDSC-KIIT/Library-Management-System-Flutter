@@ -37,7 +37,7 @@ To clone this repo and look into the source code, go to the terminal in your wor
 git clone https://github.com/sayannath/Libaray-Management-System-Flutter.git
 ```
 
-### 𝔸𝕡𝕡𝕝𝕚𝕔𝕒𝕥𝕚𝕠𝕟 -
+## 𝔸𝕡𝕡𝕝𝕚𝕔𝕒𝕥𝕚𝕠𝕟 -
 ```
 flutter run 
 ```
