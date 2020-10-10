@@ -21,10 +21,10 @@
 
 <a name="about"></a>
 # 𝔸𝕓𝕠𝕦𝕥 -
-This flutter application is for the users who are in charge of the library. The whole system is
-going digital so the tedious job of writing everything in paper will be sorted with this app. This
+This flutter application is for the users who are in charge of the library i.e. the admins. The whole system is
+going digital, so the tedious job of writing everything in paper will be sorted with this app. This
 app will help them to add books by scanning the barcodes and the title of the book. After
-adding their books. There will be a section in that app where they can give out the books.
+adding their books, there will be a section in that app where they can give out the books to others and also keep track of when they are returned making things more organised.
 
 <a name="preview"></a>
 # 𝔸𝕡𝕡 ℙ𝕣𝕖𝕧𝕚𝕖𝕨 -
