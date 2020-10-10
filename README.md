@@ -31,7 +31,6 @@ adding their books. There will be a section in that app where they can give out 
 # ℂ𝕠𝕟𝕥𝕣𝕚𝕓𝕦𝕥𝕠𝕣𝕤 -
 
 𝓐 [DSC KIIT](https://github.com/DSC-KIIT) 𝓟𝓻𝓸𝓳𝓮𝓬𝓽
-
 ![Banner](https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/download%20(1).png)
 
 
