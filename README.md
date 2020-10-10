@@ -34,13 +34,13 @@ adding their books. There will be a section in that app where they can give out 
 <a name="contents"></a>
 # 𝕋𝕒𝕓𝕝𝕖 𝕠𝕗 𝕔𝕠𝕟𝕥𝕖𝕟𝕥𝕤 -
 
-- [ Description. ](#title)
-- ![About](#about)
-- [App Preview](#preview)
-- [Table of contents](#contents)
-- [Getting Started](#getting-started)
-- [Application](#application)
-- [Contributers](#contributors)
+- [Description. ](#title)
+- [About.](#about)
+- [App Preview.](#preview)
+- [Table of contents.](#contents)
+- [Getting Started.](#getting-started)
+- [Application.](#application)
+- [Contributers.](#contributors)
  
 <a name="getting-started"></a>
   ## 𝔾𝕖𝕥𝕥𝕚𝕟𝕘 𝕊𝕥𝕒𝕣𝕥𝕖𝕕 -
