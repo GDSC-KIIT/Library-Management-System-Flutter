@@ -11,8 +11,8 @@
 ![GitHub](https://img.shields.io/github/license/Sayak11/Libaray-Management-System-Flutter)
    </a>
     <!-- API -->
-    <a href="https://android-arsenal.com/api?level=28">
-        <img src="https://img.shields.io/badge/API-28%2B-orange.svg?style=flat"/>
+    <a href="https://android-arsenal.com/api?level=21">
+        <img src="https://img.shields.io/badge/API-21%2B-orange.svg?style=flat"/>
     </a>
     [![Star on GitHub](https://img.shields.io/github/stars/sayannath/Libaray-Management-System-Flutter.svg?style=social)](https://github.com/all-contributors/all-contributors/stargazers)
     [![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
@@ -83,5 +83,5 @@ This project is under [MIT Licence](https://github.com/Sayak11/Libaray-Managemen
 
 
 
-
+  
 
