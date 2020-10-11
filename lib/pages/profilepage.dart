@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:library_system/pages/editProfilePage.dart';
 import 'package:library_system/pages/homePage.dart';
-import 'package:library_system/pages/login.dart';
+import 'package:library_system/pages/loginSignupPage.dart';
 
 class ProfilePage extends StatefulWidget {
   ProfilePage({Key key}) : super(key: key);
@@ -186,7 +186,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => LoginPage()));
+                                    builder: (context) => LoginSignupPage()));
                           },
                         ),
                       ),
