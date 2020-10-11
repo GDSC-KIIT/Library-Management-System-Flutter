@@ -1,6 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:library_system/models/Book_model.dart';
 import 'package:flutter/material.dart';
+import 'package:library_system/pages/homePage.dart';
 
 class ReturnBookPage extends StatefulWidget {
   @override
@@ -8,35 +10,73 @@ class ReturnBookPage extends StatefulWidget {
 }
 
 class _ReturnBookPageState extends State<ReturnBookPage> {
-  void _onScanned() async {
+  void _onScanned(BuildContext context) async {
+    print(reResult);
     // ignore: non_constant_identifier_names
-    final FirestoreInstance = Firestore.instance;
-    FirestoreInstance.collection("books")
-        .document(reResult)
-        .updateData({"status": "IN"}).then((_) {
-      showDialog(
-        context: context,
-        child: new SimpleDialog(
-          title: new Text("Book Returned",
-              style: TextStyle(color: Colors.greenAccent[500]),
-              textAlign: TextAlign.center),
-          children: <Widget>[
-            /*Container(
-              height: 100,
-              width: 200,
-            ),*/
-            SizedBox(
-              height: 5,
-            ),
-            Image.asset(
-              "assets/images/done.png",
-              width: 200,
-              height: 100,
-            ),
-          ],
-        ),
-      );
-    });
+    final firestoreInstance = FirebaseFirestore.instance;
+    final temp =
+        await firestoreInstance.collection("books").doc(reResult.trim()).get();
+    if (!temp.exists) {
+      Navigator.of(context).pop();
+      Fluttertoast.showToast(
+          msg: "Book doesnt Exists ",
+          toastLength: Toast.LENGTH_LONG,
+          gravity: ToastGravity.CENTER);
+    } else if (temp.data()["status"] != "OUT") {
+      print("reached");
+      Navigator.of(context).pop();
+      Fluttertoast.showToast(
+          msg: "Book isnt issued so cant be returned ",
+          toastLength: Toast.LENGTH_LONG,
+          gravity: ToastGravity.CENTER);
+    } else {
+      final tempquery = await FirebaseFirestore.instance
+          .collection("log")
+          .where("bookuid", isEqualTo: reResult.trim())
+          .orderBy("date", descending: true)
+          .limit(1)
+          .get();
+      firestoreInstance
+          .collection("log")
+          .doc(tempquery.docs[0].id)
+          .update({"returned": DateTime.now()});
+      firestoreInstance
+          .collection("books")
+          .doc(reResult.trim())
+          .update({"status": " IN"}).then((_) {
+        showDialog(
+            context: context,
+            builder: (context) {
+              return AlertDialog(
+                title: new Text("Book Returned",
+                    style: TextStyle(color: Colors.greenAccent[500]),
+                    textAlign: TextAlign.center),
+                content: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Image.asset(
+                      "assets/images/done.png",
+                      width: 200,
+                      height: 100,
+                    ),
+                  ],
+                ),
+                actions: [
+                  FlatButton(
+                    onPressed: () {
+                      Navigator.pushNamedAndRemoveUntil(
+                          context, HomePage.id, (route) => false);
+                    },
+                    child: Text("Ok"),
+                  )
+                ],
+              );
+            });
+      });
+    }
   }
 
   @override
@@ -124,7 +164,7 @@ class _ReturnBookPageState extends State<ReturnBookPage> {
                               style: TextStyle(
                                   color: Color(0xFFF3BB84), fontSize: 15)),
                           onPressed: () async {
-                            _onScanned();
+                            _onScanned(context);
                           },
                         ),
                       ),

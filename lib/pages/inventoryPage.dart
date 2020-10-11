@@ -18,7 +18,7 @@ class _InventoryPageState extends State<InventoryPage> {
           title: Text("Inventory Page"),
         ),
         body: StreamBuilder(
-          stream: Firestore.instance.collection("books").snapshots(),
+          stream: FirebaseFirestore.instance.collection("books").snapshots(),
           builder: (context, snapshot) {
              if(!snapshot.hasData){
                return Center(child: CircularProgressIndicator());
