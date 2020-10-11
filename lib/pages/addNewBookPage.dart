@@ -32,16 +32,16 @@ class _AddNewBookPageState extends State<AddNewBookPage> {
   void _handleSubmit() {
     final FormState form = formKey.currentState;
     // ignore: non_constant_identifier_names
-    final FirestoreInstance = Firestore.instance;
+    final firestoreInstance = FirebaseFirestore.instance;
     if (form.validate()) {
       form.save();
       form.reset();
-      FirestoreInstance.collection("books").add(book.toJson()).then(
+      firestoreInstance.collection("books").add(book.toJson()).then(
         (value) {
-          print(value.documentID);
+          print(value.id);
           setState(() {
             code = bc.toSvg(
-              value.documentID,
+              value.id,
             );
           });
           showDialog(

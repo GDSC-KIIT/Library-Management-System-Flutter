@@ -1,5 +1,4 @@
-import 'dart:io';
-import 'dart:typed_data';
+
 
 import 'package:barcode_scan/barcode_scan.dart';
 import 'package:flutter/material.dart';

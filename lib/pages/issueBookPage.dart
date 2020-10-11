@@ -361,7 +361,7 @@ class _IssueBookPageState extends State<IssueBookPage> {
         ..text =
             'Please see the below attached pdf for details '; //body of the email
 
-      await books.doc(widget.barcode).update({"status": "Out"});
+      await books.doc(widget.barcode).update({"status": "OUT"});
       await FirebaseFirestore.instance
           .collection("invoice")
           .doc("invoice")
