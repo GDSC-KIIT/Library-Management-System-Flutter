@@ -41,6 +41,8 @@ making things more organised.
 - [Table of contents.](#contents)
 - [Getting Started.](#getting-started)
 - [Application.](#application)
+- [License.](#license)
+- [Team Lead.](#lead)
 - [Contributers.](#contributors)
  
 <a name="getting-started"></a>
@@ -58,22 +60,25 @@ flutter run
 #### [import the project in Android Studio or Visual Studio Code as you wish and add your ideas to improve the app.]
 
 
-<a name="contributors"></a>
+<a name="license"></a>
 
 # 𝕃𝕚𝕔𝕖𝕟𝕤𝕖 -
 This project is under [MIT Licence](https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/LICENSE).
 
+<a name="lead"></a>
+# 𝕋𝕖𝕒𝕞 𝕃𝕖𝕒𝕕 -
+[Sayan Nath](https://github.com/sayannath)  
 
+<a name="contributors"></a>
 # ℂ𝕠𝕟𝕥𝕣𝕚𝕓𝕦𝕥𝕠𝕣𝕤 -
 1.) [Sambit Majhi](https://github.com/sambitraze?tab=overview&from=2019-12-01&to=2019-12-31)  
 2.) [Rohan Roy Chowdhury](https://github.com/Rohan2309)  
-3.) [Sayan Nath](https://github.com/sayannath)  
-4.) [Aditya Das](https://github.com/ThatOneTallKid)  
-5.) [Ayushi Das](https://github.com/Ayushi673)  
-6.) [Aman Verma](https://github.com/amanv8060)  
-7.) [Taranpreet Singh Chabbra](https://github.com/singhtaran1005)  
-8.) [Rupanshi Chawda](https://github.com/rupanshi-chawda)  
-9.) [Sayak Roy Chowdhury](https://github.com/Sayak11)  
+3.) [Aditya Das](https://github.com/ThatOneTallKid)  
+4.) [Ayushi Das](https://github.com/Ayushi673)  
+5.) [Aman Verma](https://github.com/amanv8060)  
+6.) [Taranpreet Singh Chabbra](https://github.com/singhtaran1005)  
+7.) [Rupanshi Chawda](https://github.com/rupanshi-chawda)  
+8.) [Sayak Roy Chowdhury](https://github.com/Sayak11)  
 
 [Back to Start](#title)
 
