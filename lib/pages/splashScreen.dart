@@ -1,6 +1,8 @@
 import 'dart:async';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:library_system/pages/login.dart';
+import 'package:library_system/pages/homePage.dart';
+import 'package:library_system/pages/loginSignupPage.dart';
 
 class UIConstants {
   static const double ASSUMED_SCREEN_HEIGHT = 640.0;
@@ -19,6 +21,7 @@ class UIConstants {
 }
 
 class SplashScreen extends StatefulWidget {
+  static String id = 'splash';
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
@@ -36,8 +39,12 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   void navigate() {
-    Navigator.push(
-        context, MaterialPageRoute(builder: (context) => LoginPage()));
+    if (FirebaseAuth.instance.currentUser != null) {
+      Navigator.pushNamedAndRemoveUntil(
+          context, HomePage.id, ModalRoute.withName('/'));
+    } else
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => LoginSignupPage()));
   }
 
   @override
@@ -46,61 +53,62 @@ class _SplashScreenState extends State<SplashScreen> {
       backgroundColor: Color(0xFFE0B485),
       body: Center(
         child: Container(
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(
-                  'assets/images/splashbg.png',
-                ),
-                fit: BoxFit.cover,
+          height: MediaQuery.of(context).size.height,
+          width: MediaQuery.of(context).size.width,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage(
+                'assets/images/splashbg.png',
               ),
+              fit: BoxFit.cover,
             ),
-            child: ListView(
-              children: [
-                Column(
-                  children: [
-                    SizedBox(
-                      height: 180,
-                    ),
-                    Container(
-                      height: 220,
-                      width: 220,
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage(UIConstants.splashScreenLogo),
-                        ),
+          ),
+          child: ListView(
+            children: [
+              Column(
+                children: [
+                  SizedBox(
+                    height: 180,
+                  ),
+                  Container(
+                    height: 220,
+                    width: 220,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage(UIConstants.splashScreenLogo),
                       ),
                     ),
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          'LIBRARY',
-                          style: TextStyle(
-                            color: Color(0xFFDD3617),
-                            fontSize: 28,
-                          ),
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'LIBRARY',
+                        style: TextStyle(
+                          color: Color(0xFFDD3617),
+                          fontSize: 28,
                         ),
-                        SizedBox(
-                          width: 8,
+                      ),
+                      SizedBox(
+                        width: 8,
+                      ),
+                      Text(
+                        'MANAGED',
+                        style: TextStyle(
+                          color: Color(0xFF584846),
+                          fontSize: 28,
                         ),
-                        Text(
-                          'MANAGED',
-                          style: TextStyle(
-                            color: Color(0xFF584846),
-                            fontSize: 28,
-                          ),
-                        ),
-                      ],
-                    )
-                  ],
-                )
-              ],
-            ),),
+                      ),
+                    ],
+                  )
+                ],
+              )
+            ],
+          ),
+        ),
       ),
     );
   }
