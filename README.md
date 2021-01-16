@@ -65,7 +65,7 @@ This project is under [MIT Licence](https://github.com/Sayak11/Libaray-Managemen
 
 
 # Contributors -
-1.) [Sayan Nath](https://github.com/sayannath) 
+1.) [Sayan Nath](https://github.com/sayannath) <br>
 2.) [Sambit Majhi](https://github.com/sambitraze?tab=overview&from=2019-12-01&to=2019-12-31)  
 3.) [Rohan Roy Chowdhury](https://github.com/Rohan2309)   
 4.) [Aditya Das](https://github.com/ThatOneTallKid)  
