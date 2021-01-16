@@ -1,5 +1,5 @@
 <a name="title"></a>
-# 𝕃𝕚𝕓𝕣𝕒𝕣𝕪 𝕄𝕒𝕟𝕒𝕘𝕖𝕞𝕖𝕟𝕥 𝕊𝕪𝕤𝕥𝕖𝕞 📚📚
+# Library Management App 📚📚
 
 ![Banner](https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/online_library%402x.png)
 
@@ -28,12 +28,12 @@ section in that app where they can give out the books to others and also keep tr
 making things more organised.  
 
 <a name="preview"></a>
-# 𝔸𝕡𝕡 ℙ𝕣𝕖𝕧𝕚𝕖𝕨 -
+# App Preview -
 <img src="https://media.giphy.com/media/TTEQuQDISXm2t5Klyj/giphy.gif" width="350" height="350"/><img src="https://media.giphy.com/media/XVt7WWMUBHT6ZZgQ0T/giphy.gif" width="350" height="350"/>
 
 
 <a name="contents"></a>
-# 𝕋𝕒𝕓𝕝𝕖 𝕠𝕗 𝕔𝕠𝕟𝕥𝕖𝕟𝕥𝕤 -
+# Table of Content -
 
 - [Description. ](#title)
 - [About.](#about)
@@ -44,14 +44,14 @@ making things more organised.
 - [Contributers.](#contributors)
  
 <a name="getting-started"></a>
-  ## 𝔾𝕖𝕥𝕥𝕚𝕟𝕘 𝕊𝕥𝕒𝕣𝕥𝕖𝕕 -
+  ## Getting Started -
 
 To clone this repo and look into the source code, go to the terminal in your workspace and then type -
 ```
 git clone https://github.com/sayannath/Libaray-Management-System-Flutter.git
 ```
 <a name="application"></a>
-## 𝔸𝕡𝕡𝕝𝕚𝕔𝕒𝕥𝕚𝕠𝕟 -
+## Application -
 ```
 flutter run 
 ```
@@ -60,14 +60,14 @@ flutter run
 
 <a name="contributors"></a>
 
-# 𝕃𝕚𝕔𝕖𝕟𝕤𝕖 -
+# Lincense -
 This project is under [MIT Licence](https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/LICENSE).
 
 
-# ℂ𝕠𝕟𝕥𝕣𝕚𝕓𝕦𝕥𝕠𝕣𝕤 -
-1.) [Sambit Majhi](https://github.com/sambitraze?tab=overview&from=2019-12-01&to=2019-12-31)  
-2.) [Rohan Roy Chowdhury](https://github.com/Rohan2309)  
-3.) [Sayan Nath](https://github.com/sayannath)  
+# Contributors -
+1.) [Sayan Nath](https://github.com/sayannath) 
+2.) [Sambit Majhi](https://github.com/sambitraze?tab=overview&from=2019-12-01&to=2019-12-31)  
+3.) [Rohan Roy Chowdhury](https://github.com/Rohan2309)   
 4.) [Aditya Das](https://github.com/ThatOneTallKid)  
 5.) [Ayushi Das](https://github.com/Ayushi673)  
 6.) [Aman Verma](https://github.com/amanv8060)  
@@ -77,11 +77,5 @@ This project is under [MIT Licence](https://github.com/Sayak11/Libaray-Managemen
 
 [Back to Start](#title)
 
-# 𝔸 [DSC KIIT](https://github.com/DSC-KIIT) ℙ𝕣𝕠𝕛𝕖𝕔𝕥  
+# A [DSC KIIT](https://github.com/DSC-KIIT) ℙ𝕣𝕠𝕛𝕖𝕔𝕥  
 ![Banner](https://github.com/Sayak11/Libaray-Management-System-Flutter/blob/master/download%20(1).png)  
-
-
-
-
-  
-
